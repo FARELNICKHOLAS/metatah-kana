@@ -46,7 +46,7 @@ export default function Hero() {
           className="flex flex-col items-center gap-1 mt-12 mb-12"
         >
           <span className="font-serif text-sm md:text-base tracking-[0.2em] uppercase">
-            Jumat
+            Kamis
           </span>
           <span className="font-serif text-base md:text-lg tracking-[0.1em]">
             10 September 2026
