@@ -36,7 +36,7 @@ export default function EventDetails() {
             </div>
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm text-gold uppercase tracking-[0.2em] font-medium">Tanggal</span>
-              <span className="text-xl font-serif text-text">Jumat, 10 September 2027</span>
+              <span className="text-xl font-serif text-text">Jumat, 10 September 2026</span>
             </div>
           </motion.div>
 

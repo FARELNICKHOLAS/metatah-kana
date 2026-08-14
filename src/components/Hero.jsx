@@ -49,7 +49,7 @@ export default function Hero() {
             Jumat
           </span>
           <span className="font-serif text-base md:text-lg tracking-[0.1em]">
-            10 September 2027
+            10 September 2026
           </span>
         </motion.div>
 
