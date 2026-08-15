@@ -90,8 +90,8 @@ export default function EventDetails() {
             </div>
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm text-gold uppercase tracking-[0.2em] font-medium">Tempat</span>
-              <span className="text-xl font-serif text-text text-center">Br. Dlodtunon, Desa Batuan</span>
-              <span className="text-sm text-gray-500 text-center mt-2 max-w-[280px]">Jln Raya Sukawati, Sukawati, Gianyar, Bali</span>
+              <span className="text-xl font-serif text-text text-center">Griya Agung Lingga Khutawaringin</span>
+              <span className="text-sm text-gray-500 text-center mt-2 max-w-[280px]">Br. Dlodtunon, Desa Batuan, Sukawati, Gianyar</span>
             </div>
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ export default function EventDetails() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ type: 'spring', bounce: 0, duration: 0.8, delay: 0.7 }}
-          href="https://www.google.com/maps/search/?api=1&query=Jln+Raya+Sukawati+Br.+Dlodtunon+Desa+Batuan+Sukawati+Gianyar+Bali" 
+          href="https://maps.app.goo.gl/efmU9tyK3Q2bXihE9" 
           target="_blank" 
           rel="noreferrer"
           className="mt-8 px-8 py-3 border border-text text-text rounded-full text-sm tracking-widest uppercase hover:bg-text hover:text-white active:scale-[0.96] transition-all duration-300"
