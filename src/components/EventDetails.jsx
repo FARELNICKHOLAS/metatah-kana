@@ -109,26 +109,28 @@ export default function EventDetails() {
           Buka Google Maps
         </motion.a>
 
-        {/* Embedded Map */}
+        {/* Embedded Map - Seamless/No Card Design */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: 'spring', bounce: 0, duration: 1, delay: 0.9 }}
-          className="w-full max-w-3xl mt-16 overflow-hidden rounded-[2rem] border border-gold/30 shadow-[0_8px_40px_rgba(0,0,0,0.06)] relative bg-white/30 backdrop-blur-md p-2 md:p-3"
+          transition={{ duration: 1.5, delay: 0.8 }}
+          className="w-full mt-24 h-64 md:h-[400px] relative w-screen max-w-none left-1/2 -translate-x-1/2"
+          style={{ 
+            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
+            maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)'
+          }}
         >
-          <div className="w-full h-64 md:h-96 rounded-[1.5rem] md:rounded-[1.75rem] overflow-hidden relative">
-            <iframe
-              src="https://maps.google.com/maps?q=Griya+Agung+Lingga+Khutawaringin,Batuan,Sukawati,Gianyar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full object-cover grayscale-[40%] sepia-[30%] opacity-90 hover:grayscale-0 hover:sepia-0 hover:opacity-100 transition-all duration-1000 ease-out"
-            />
-          </div>
+          <iframe
+            src="https://maps.google.com/maps?q=Griya+Agung+Lingga+Khutawaringin,Batuan,Sukawati,Gianyar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full object-cover grayscale-[40%] sepia-[20%] opacity-60 hover:grayscale-0 hover:sepia-0 hover:opacity-100 transition-all duration-1000 ease-out pointer-events-auto"
+          />
         </motion.div>
 
       </div>
