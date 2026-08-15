@@ -43,8 +43,27 @@ export default function Meaning() {
         className="max-w-4xl w-full mx-auto flex flex-col items-center gap-24 relative z-10"
       >
         
+        {/* Connecting Ornament */}
+        <motion.div variants={textVariants} className="flex flex-col items-center gap-3 -mt-20 mb-8">
+          <motion.div 
+            initial={{ height: 0 }}
+            whileInView={{ height: 80 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="w-px bg-gradient-to-b from-transparent to-gold/50" 
+          />
+          <img src={emblem} alt="" className="w-8 h-8 opacity-60 animate-[spin_15s_linear_infinite]" />
+          <motion.div 
+            initial={{ height: 0 }}
+            whileInView={{ height: 80 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="w-px bg-gradient-to-b from-gold/50 to-transparent" 
+          />
+        </motion.div>
+
         {/* Title */}
-        <motion.div variants={textVariants} className="text-center space-y-6">
+        <motion.div variants={textVariants} className="text-center space-y-6 -mt-12">
           <span className="text-gold uppercase tracking-[0.3em] text-xs font-medium">Makna Upacara</span>
           <h2 className="text-4xl md:text-5xl font-serif text-text font-light tracking-wide">Sebuah Transisi Suci</h2>
           <div className="w-px h-16 bg-gold/40 mx-auto mt-8" />
