@@ -5,18 +5,23 @@ import { Volume2, VolumeX } from 'lucide-react';
 export default function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
+  const hasSetTime = useRef(false);
 
   // Attempt to Auto-play on mount, and fallback to first interaction
   useEffect(() => {
     if (!audioRef.current) return;
-    
-    audioRef.current.currentTime = 116; // Start at 1:56
     audioRef.current.volume = 0.5; // Set volume to 50%
     
     const tryPlay = () => {
       if (audioRef.current && audioRef.current.paused) {
         audioRef.current.play()
-          .then(() => setIsPlaying(true))
+          .then(() => {
+            if (!hasSetTime.current) {
+              audioRef.current.currentTime = 116; // Start at 1:56
+              hasSetTime.current = true;
+            }
+            setIsPlaying(true);
+          })
           .catch((err) => console.log('Autoplay prevented:', err));
       }
     };
@@ -45,10 +50,18 @@ export default function AudioPlayer() {
     
     if (isPlaying) {
       audioRef.current.pause();
+      setIsPlaying(false);
     } else {
-      audioRef.current.play().catch(err => console.log(err));
+      audioRef.current.play()
+        .then(() => {
+          if (!hasSetTime.current) {
+            audioRef.current.currentTime = 116;
+            hasSetTime.current = true;
+          }
+          setIsPlaying(true);
+        })
+        .catch(err => console.log(err));
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
