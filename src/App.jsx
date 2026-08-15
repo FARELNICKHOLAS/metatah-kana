@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Hero from './components/Hero';
+import Meaning from './components/Meaning';
 import Profiles from './components/Profiles';
 import EventDetails from './components/EventDetails';
 import RSVP from './components/RSVP';
@@ -48,6 +49,7 @@ function App() {
             transition={{ duration: 1.8, ease: [0.76, 0, 0.24, 1], delay: 0.3 }}
           >
             <Hero />
+            <Meaning />
             <Profiles />
             <EventDetails />
             <RSVP />
