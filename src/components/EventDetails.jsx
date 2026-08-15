@@ -4,8 +4,8 @@ import separator from '../assets/main_1.png';
 
 export default function EventDetails() {
   return (
-    <section className="relative min-h-[80vh] py-24 px-4 flex flex-col items-center justify-center">
-      <div className="max-w-xl w-full mx-auto relative z-10 flex flex-col items-center gap-12 text-center">
+    <section className="relative min-h-[80vh] pt-24 pb-0 flex flex-col items-center justify-center w-full">
+      <div className="max-w-xl w-full mx-auto relative z-10 flex flex-col items-center gap-12 text-center px-4">
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -109,31 +109,31 @@ export default function EventDetails() {
           Buka Google Maps
         </motion.a>
 
-        {/* Embedded Map - Seamless/No Card Design */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.5, delay: 0.8 }}
-          className="w-full mt-24 h-64 md:h-[400px] relative w-screen max-w-none left-1/2 -translate-x-1/2"
-          style={{ 
-            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
-            maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)'
-          }}
-        >
-          <iframe
-            src="https://maps.google.com/maps?q=Griya+Agung+Lingga+Khutawaringin,Batuan,Sukawati,Gianyar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-full object-cover grayscale-[40%] sepia-[20%] opacity-60 hover:grayscale-0 hover:sepia-0 hover:opacity-100 transition-all duration-1000 ease-out pointer-events-auto"
-          />
-        </motion.div>
-
       </div>
+
+      {/* Embedded Map - True Edge to Edge */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5, delay: 0.5 }}
+        className="w-full mt-24 h-[50vh] md:h-[500px] relative"
+        style={{ 
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)',
+          maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)'
+        }}
+      >
+        <iframe
+          src="https://maps.google.com/maps?q=Griya+Agung+Lingga+Khutawaringin,Batuan,Sukawati,Gianyar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full object-cover pointer-events-auto"
+        />
+      </motion.div>
     </section>
   );
 }
