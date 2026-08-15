@@ -17,14 +17,6 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col items-center text-center w-full mx-auto mt-16 overflow-hidden">
 
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="font-serif italic text-sm md:text-base text-gold font-medium mb-3"
-        >
-          Om Swastyastu
-        </motion.span>
 
         <motion.span
           initial={{ opacity: 0 }}
@@ -47,15 +39,15 @@ export default function Hero() {
           </h1>
         </motion.div>
 
-        {/* Date */}
+        {/* Greeting */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="flex flex-col items-center gap-1 mt-12 mb-12"
+          className="flex flex-col items-center gap-1 mt-4 mb-12"
         >
-          <span className="font-serif text-base md:text-lg tracking-[0.1em]">
-            10 September 2026
+          <span className="font-serif italic text-base md:text-lg text-gold font-medium tracking-wide">
+            Om Swastyastu
           </span>
         </motion.div>
 
