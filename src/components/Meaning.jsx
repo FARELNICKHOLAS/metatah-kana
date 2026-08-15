@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ornament from '../assets/border_1.png'; // Assuming border_1 or main_1 is an elegant ornament
+import emblem from '../assets/main_2.png';
 
 export default function Meaning() {
   const containerVariants = {
