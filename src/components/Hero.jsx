@@ -20,10 +20,19 @@ export default function Hero() {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="font-serif italic text-sm md:text-base text-gold font-medium mb-3"
+        >
+          Om Swastyastu
+        </motion.span>
+
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
           className="font-serif italic text-sm md:text-base mb-4"
         >
-          Upacara Mepandes & Menek Kelih
+          Upacara Menek Kelih & Mepandes
         </motion.span>
 
         {/* Names in Script */}
@@ -62,14 +71,6 @@ export default function Hero() {
         >
           "Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa, kami memohon doa restu untuk melaksanakan Upacara Mepandes & Menek Kelih anak kami."
         </motion.p>
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.1 }}
-          className="font-serif italic text-sm text-gold font-medium"
-        >
-          Om Shanti Shanti Shanti Om
-        </motion.span>
 
         {/* Photo Slot */}
         <motion.div
