@@ -33,7 +33,7 @@ export default function RSVP() {
         </motion.div>
 
         <motion.a
-          href="https://wa.me/6281237422998?text=Halo%2C%20saya%20ingin%20mengkonfirmasi%20kehadiran%20untuk%20acara%20Mepandes%20%26%20Menek%20Kelih."
+          href="https://wa.me/6281237422998?text=Halo%2C%20saya%20ingin%20mengkonfirmasi%20kehadiran%20untuk%20acara%20Menek%20Kelih%20%26%20Mepandes."
           target="_blank"
           rel="noreferrer"
           initial={{ opacity: 0, y: 20 }}

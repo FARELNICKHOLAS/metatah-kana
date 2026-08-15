@@ -32,7 +32,7 @@ export default function Cover({ onOpen }) {
           transition={{ duration: 1.2, delay: 0.2, ease: [0.32, 0.72, 0, 1] }}
           className="font-serif italic text-xs md:text-sm text-gold/80 mb-8 uppercase tracking-[0.2em]"
         >
-          Undangan Mepandes & Menek Kelih
+          Undangan Menek Kelih & Mepandes
         </motion.span>
         
         <motion.h1 

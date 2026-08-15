@@ -69,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.9 }}
           className="font-serif italic text-xs md:text-sm text-text/70 leading-relaxed max-w-sm mb-6"
         >
-          "Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa, kami memohon doa restu untuk melaksanakan Upacara Mepandes & Menek Kelih anak kami."
+          "Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa, kami memohon doa restu untuk melaksanakan Upacara Menek Kelih & Mepandes anak kami."
         </motion.p>
 
         {/* Photo Slot */}
